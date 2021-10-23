@@ -11,13 +11,13 @@ namespace GenricExamples
             
             Console.WriteLine("Hello World!");
             Console.WriteLine("Enter the First number:");
-            float f = Convert.ToSingle(Console.ReadLine());
+            string f =Console.ReadLine();
 
             Console.WriteLine("Enter the second number:");
-            float s = Convert.ToSingle(Console.ReadLine());
+            string s = Console.ReadLine();
 
             Console.WriteLine("Enter the third number:");
-            float t = Convert.ToSingle(Console.ReadLine());
+            string t = Console.ReadLine();
 
             SimpleClass simple = new SimpleClass(f,s,t);
             simple.findMax();
