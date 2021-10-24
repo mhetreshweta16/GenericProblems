@@ -17,7 +17,7 @@ namespace GenricExamples
         {
             this.Value = value;
         }
-        public T[] Sort(T[] values)
+        public T[] Sort1(T[] values)
         {
             Array.Sort(values);
             Console.WriteLine("the sorted array is :");
@@ -30,7 +30,7 @@ namespace GenricExamples
      public  T maxValue(params T[] values)
         {
 
-            var sorted_values = Sort(values);
+            var sorted_values = Sort1(values);
             return sorted_values[^1];
             
         }
