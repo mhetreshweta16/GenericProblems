@@ -8,14 +8,10 @@ namespace GenricExamples
         {
             
             Console.WriteLine("Hello World!");
-            int[] arr = { 112, 342, 654, 567, 897 };
+            int[] arr = { 342, 654, 111, 897, 125 };
 
            GenericMaxNumber<int> simple = new GenericMaxNumber<int>(arr);
             simple.printMaxValue();
-
-
-
-
 
              /*GenericMaxNumber<float> simple1 = new GenericMaxNumber<float>(25.20f, 25.33f, 25.12f);
             simple1.findMax1();
@@ -31,16 +27,6 @@ namespace GenricExamples
 
             Console.WriteLine("Enter the third number:");
             int t = Convert.ToInt32(Console.ReadLine());*/
-
-
-
-
-
-
-
-
-
-
 
         }
     }
