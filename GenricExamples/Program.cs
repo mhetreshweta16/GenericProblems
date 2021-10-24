@@ -4,26 +4,32 @@ namespace GenricExamples
 {
     class Program
     {
-        
-
         static void Main(string[] args)
         {
             
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Enter the First number:");
-            string f =Console.ReadLine();
+           
+           GenericMaxNumber<int> simple = new GenericMaxNumber<int>(25,34,32);
+            simple.findMax();
+             GenericMaxNumber<float> simple1 = new GenericMaxNumber<float>(25.20f, 25.33f, 25.12f);
+            simple1.findMax();
+            GenericMaxNumber<string> simple2 = new GenericMaxNumber<string>("abc", "red", "wsx");
+            simple.findMax();
+            Console.ReadLine();
+
+            /*Console.WriteLine("Enter the First number:");
+            int f = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter the second number:");
-            string s = Console.ReadLine();
+            int s = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter the third number:");
-            string t = Console.ReadLine();
+            int t = Convert.ToInt32(Console.ReadLine());*/
 
-            SimpleClass simple = new SimpleClass(f,s,t);
-            simple.findMax();
 
-            
-           
+
+
+
 
 
 

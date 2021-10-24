@@ -6,25 +6,19 @@ using System.Threading.Tasks;
 
 namespace GenricExamples
 {
-    class SimpleClass
+    class GenericMaxNumber<T> where T:IComparable
     {
-        public string first, second, third;
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SimpleClass"/> class.
-        /// </summary>
-        /// <param name="first">The first.</param>
-        /// <param name="second">The second.</param>
-        /// <param name="third">The third.</param>
-        public SimpleClass(string first, string second, string third)
+        public T first, second, third;
+
+        public GenericMaxNumber(T first, T second, T third)
         {
             this.first = first;
             this.second = second;
             this.third = third;
-        
         }
-
-        public void  findMax()
+     public  void findMax()
         {
+            
             //here checking the greater number among three using compareTo() method
 
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
@@ -44,5 +38,7 @@ namespace GenricExamples
                 Console.WriteLine("numbers are equal");//else all number are equal
             }
         }
+
+
     }
 }
